@@ -122,6 +122,9 @@ todasLasCartas.forEach(function(carta) {
 
 
     carta.addEventListener("click", function(){
+        console.log("Carta pulsada:", carta.dataset.simbolo);
+        console.log("Primera carta:", primeraCarta);
+        console.log("Bloqueo:", bloqueo);
         //No permitira clics mientras comprobamos una pareja.
         if(bloqueo || carta.classList.contains("descubierta")){
             return;
