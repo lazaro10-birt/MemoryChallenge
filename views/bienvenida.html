@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Challenge - Bienvenida</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <main class="contenedor">
+        <h1>Memory Challenge</h1>
+
+        <p class="subtitulo">¡Pon a prueba tu memoria!</p>
+
+        <section class="intrucciones">
+            <h2>¿Cómo se juega?</h2>
+            <p>
+                Encuentra todas las parejas de cartas iguales
+                antes de que el tiempo llegue a cero.
+            </p>
+            <p>
+                Selecciona dos cartas en cada turno.
+                Si coinciden, permanecerán descubiertas.
+                Si son diferentes, volverán a ocultarse.
+            </p>
+            <p>¡Encuentra todas las parejas para ganar!</p>
+        </section>
+
+        <section class="seleccion-nivel">
+            <h2>Elige tu dificultad</h2>
+
+            <label for="nivel">Nivel de dificultad:</label>
+
+            <select id="nivel">
+                <option value="principiante">Principiante (3 × 4)</option>
+                <option value="intermedio">Intermedio (4 × 4)</option>
+                <option value="avanzado">Avanzado (4 × 5)</option>
+            </select>
+
+            <p id="descripcionNivel">
+                6 parejas · 12 cartas
+            </p>
+        </section>
+
+        <button id="btnIniciar" type="button">
+            Comenzar partida
+        </button>
+    </main>
+
+    <script src="../js/bienvenido.js"></script>
+
+</body>
+</html>

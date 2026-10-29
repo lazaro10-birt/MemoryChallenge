@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Challenge - Partida</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <main class="contenedor pantalla-juego">
+        <h1>Memory Challenge</h1>
+        <p class="subtitulo">¡Encuentra todas las parejas!</p>
+
+        <section class="panel-juego">
+            <div class="dato-juego">
+                <span>Tiempo restante</span>
+                <strong id="tiempo">30</strong>
+                <span>segundos</span>
+            </div>
+
+            <div class="dato-juego">
+                <span>Parejas encontradas</span>
+                <strong id="parejasEncontradas">0</strong>
+            </div>
+
+            <div class="dato-juego">
+                <span>Nivel</span>
+                <strong id="nivelActual">---</strong>
+            </div>
+        </section>
+
+        <section id="tablero" class="tablero" aria-label="Tablero de cartas"></section>
+
+        <p id="mensajeJuego" role="status" aria-live="polite"></p>
+    </main>
+
+    <script type="module" src="../js/juego.js"></script>
+</body>
+</html>

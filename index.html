@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Challenge - Iniciar sesión</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <main class="contenedor">
+        <div class="icono-juego" aria-hidden="true">🧠</div>
+
+        <h1>Memory Challenge</h1>
+        <p class="subtitulo">¡Pon a prueba tu memoria!</p>
+
+        <section class="instrucciones">
+            <h2>Inicia sesión</h2>
+            <p>Introduce tus credenciales para comenzar.</p>
+
+            <form id="formLogin">
+                <div class="campo">
+                    <label for="usuario">Usuario</label>
+                    <input
+                        type="text"
+                        id="usuario"
+                        name="usuario"
+                        placeholder="Introduce tu usuario"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="contrasena">Contraseña</label>
+                    <input
+                        type="password"
+                        id="contrasena"
+                        name="contrasena"
+                        placeholder="Introduce tu contraseña"
+                        autocomplete="current-password"
+                        required
+                    >
+                </div>
+
+                <button type="submit">Entrar al juego</button>
+
+                <p id="mensaje" role="alert" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <p class="pie">Encuentra las parejas. ¡Supera el reto!</p>
+    </main>
+
+    <script type="module" src="js/login.js"></script>
+</body>
+</html>
