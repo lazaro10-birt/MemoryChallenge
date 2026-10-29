@@ -152,7 +152,7 @@ todasLasCartas.forEach(function(carta) {
             primeraCarta = null;
             segundaCarta = null;
         }else {
-            bloqueo = true;
+            bloqueo = true; 
 
             setTimeout(function() {
                 primeraCarta.textContent = "?";
@@ -164,11 +164,7 @@ todasLasCartas.forEach(function(carta) {
                 primeraCarta = null;
                 segundaCarta = null;
                 bloqueo = false;
-        }, 
-    
-    
-    
-    );
+        }, 1000);
         }
     });
 });
